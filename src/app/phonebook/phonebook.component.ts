@@ -14,31 +14,14 @@ export class PhonebookComponent implements OnInit {
     source = new LocalDataSource();
 
     settings = {
+        actions: {
+            add: false,
+            edit: false,
+            delete: false
+        },
         pager: {
           display: true,
           perPage: 5
-        },
-        actions: {
-          custom: [
-            {
-              name: 'view',
-              title: '<i class="fa fa-eye" aria-hidden="true"></i>',
-            }
-          ],
-        },
-        add: {
-          addButtonContent: '<i class="fa fa-plus"></i>',
-          createButtonContent: '<i class="fa fa-check-square"></i>',
-          cancelButtonContent: '<i class="fa fa-times-circle"></i>',
-        },
-        edit: {
-          editButtonContent: '<i class="fa fa-pencil-square-o" aria-hidden="true"></i>',
-          saveButtonContent: '<i class="fa fa-check-square"></i>',
-          cancelButtonContent: '<i class="fa fa-times-circle"></i>',
-        },
-        delete: {
-          deleteButtonContent: '<i class="fa fa-trash-o" aria-hidden="true"></i>'
-          //confirmDelete: true,
         },
         columns: {
           _id: {

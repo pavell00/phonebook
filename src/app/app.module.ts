@@ -18,6 +18,7 @@ import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
 
 import { Ng2SmartTableModule } from 'ng2-smart-table';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
     imports: [
@@ -32,7 +33,8 @@ import { Ng2SmartTableModule } from 'ng2-smart-table';
         AlertComponent,
         PhonebookComponent,
         LoginComponent,
-        RegisterComponent
+        RegisterComponent,
+        DetailComponent
     ],
     providers: [
         AuthGuard,
