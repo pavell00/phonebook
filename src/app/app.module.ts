@@ -19,6 +19,7 @@ import { RegisterComponent } from './register';
 
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { DetailComponent } from './detail/detail.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
     imports: [
@@ -26,7 +27,8 @@ import { DetailComponent } from './detail/detail.component';
         ReactiveFormsModule,
         HttpClientModule,
         routing,
-        Ng2SmartTableModule
+        Ng2SmartTableModule,
+        NgbModule.forRoot()
     ],
     declarations: [
         AppComponent,

@@ -5,7 +5,10 @@ import { LocalDataSource } from 'ng2-smart-table';
 import { User, Employee } from '../_models';
 import { UserService, DataService } from '../_services';
 
-@Component({templateUrl: 'phonebook.component.html'})
+@Component({
+    templateUrl: 'phonebook.component.html',
+    styleUrls: ['./phonebook.component.css']
+})
 export class PhonebookComponent implements OnInit {
     currentUser: User;
     users: User[] = [];
